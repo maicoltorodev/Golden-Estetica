@@ -21,6 +21,24 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Golden Estética | España',
   description: 'Clínica estética premium en España. Redefinimos la perfección con ciencia y lujo absoluto.',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/apple-touch-icon.svg',
+    shortcut: '/favicon.svg',
+  },
+  openGraph: {
+    title: 'Golden Estética | España',
+    description: 'Clínica estética premium en España. Redefinimos la perfección con ciencia y lujo absoluto.',
+    url: 'https://goldenestetica.es',
+    siteName: 'Golden Estética',
+    images: [{
+      url: '/og.png',
+      width: 1200,
+      height: 630,
+    }],
+    locale: 'es_ES',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
