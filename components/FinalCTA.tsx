@@ -33,7 +33,7 @@ export default function FinalCTA() {
   }, []);
 
   return (
-    <section ref={ctaRef} className="py-24 md:py-32 relative overflow-hidden bg-obsidian border-t border-white/5">
+    <section ref={ctaRef} id="final-cta" className="py-24 md:py-32 relative overflow-hidden bg-obsidian border-t border-white/5">
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-champagne/10 rounded-full blur-[150px] pointer-events-none"></div>
 

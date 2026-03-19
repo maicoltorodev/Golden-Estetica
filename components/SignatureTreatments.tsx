@@ -31,7 +31,7 @@ const treatments = [
     id: '04',
     title: 'Longevidad Intravenosa',
     desc: 'Cócteles de vitaminas, NAD+ y antioxidantes personalizados para vitalidad extrema.',
-    image: 'https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=800&h=1000&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&h=1000&auto=format&fit=crop'
   }
 ];
 
@@ -62,7 +62,7 @@ export default function SignatureTreatments() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-obsidian relative">
+    <section ref={sectionRef} id="signature-treatments" className="py-24 md:py-32 bg-obsidian relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-12 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">

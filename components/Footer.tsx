@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Footer() {
   const [pulse, setPulse] = useState(false);
@@ -19,22 +20,23 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-full bg-champagne flex items-center justify-center">
-                <span className="text-obsidian font-serif font-bold text-lg">G</span>
-              </div>
-              <span className="font-serif text-xl tracking-widest uppercase text-ivory">
-                Golden
-              </span>
+            <div className="mb-6">
+              <Image 
+                src="/logo2.png"
+                alt="Golden Estética Logo"
+                width={180}
+                height={50}
+                className="object-contain"
+              />
             </div>
             <p className="text-ivory/50 text-sm font-light leading-relaxed max-w-xs mb-8">
               Redefiniendo la perfección estética a través de ciencia de precisión y lujo absoluto en el corazón de España.
             </p>
             
-            {/* Server Status */}
+            {/* Status Indicator */}
             <div className="flex items-center gap-3 glass-champagne px-4 py-2 rounded-lg w-fit">
               <div className={`w-2 h-2 rounded-full bg-emerald-400 ${pulse ? 'opacity-100 shadow-[0_0_10px_rgba(52,211,153,0.8)]' : 'opacity-50'} transition-all duration-1000`}></div>
-              <span className="font-mono text-xs text-ivory/70">All systems operational</span>
+              <span className="font-mono text-xs text-ivory/70">Clínica operativa</span>
             </div>
           </div>
 

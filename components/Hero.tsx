@@ -56,17 +56,18 @@ export default function Hero() {
 
   return (
     <section ref={heroRef} className="relative pt-40 pb-20 md:pt-52 md:pb-32 overflow-hidden flex flex-col items-center">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div ref={bgRef} className="absolute inset-0 w-full h-full">
-          <Image 
-            src="/background.png" 
-            alt="Golden Estética Background" 
-            fill 
-            className="object-cover opacity-30"
-            referrerPolicy="no-referrer"
-            priority
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover opacity-40"
+          >
+            <source src="/video.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/50 to-obsidian"></div>
       </div>

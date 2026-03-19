@@ -34,7 +34,7 @@ export default function BentoFeatures() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 relative">
+    <section ref={sectionRef} id="features" className="py-24 md:py-32 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
@@ -72,7 +72,7 @@ export default function BentoFeatures() {
             <div className="relative z-10 mt-8 glass-champagne p-4 rounded-xl flex items-center justify-between border border-champagne/20">
               <div className="flex items-center gap-2 sm:gap-3 overflow-hidden mr-2">
                 <div className="w-3 h-3 rounded-full bg-champagne animate-pulse shrink-0"></div>
-                <span className="font-mono text-xs sm:text-sm text-champagne truncate">Procesando biometría...</span>
+                <span className="font-mono text-xs sm:text-sm text-champagne truncate">Esperando tu analisis...</span>
               </div>
               <span className="font-mono text-xs sm:text-sm text-ivory/50 shrink-0">100%</span>
             </div>

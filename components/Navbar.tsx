@@ -72,21 +72,7 @@ export default function Navbar() {
                   <h3 className="text-champagne/60 text-xs font-semibold uppercase tracking-wider mb-4">Navegación</h3>
                   
                   <a 
-                    href="#tratamientos" 
-                    className="group flex items-center justify-between p-4 rounded-xl glass-champagne hover:bg-champagne/20 transition-all duration-300"
-                    onClick={handleLinkClick}
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-champagne/20 flex items-center justify-center">
-                        <div className="w-6 h-6 rounded bg-champagne/40"></div>
-                      </div>
-                      <span className="text-ivory font-medium">Tratamientos</span>
-                    </div>
-                    <ChevronRight size={18} className="text-ivory/40 group-hover:text-champagne transition-colors" />
-                  </a>
-
-                  <a 
-                    href="#tecnologia" 
+                    href="#features" 
                     className="group flex items-center justify-between p-4 rounded-xl glass-champagne hover:bg-champagne/20 transition-all duration-300"
                     onClick={handleLinkClick}
                   >
@@ -100,7 +86,49 @@ export default function Navbar() {
                   </a>
 
                   <a 
-                    href="#simulador" 
+                    href="#signature-treatments" 
+                    className="group flex items-center justify-between p-4 rounded-xl glass-champagne hover:bg-champagne/20 transition-all duration-300"
+                    onClick={handleLinkClick}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-champagne/20 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-champagne/40"></div>
+                      </div>
+                      <span className="text-ivory font-medium">Tratamientos</span>
+                    </div>
+                    <ChevronRight size={18} className="text-ivory/40 group-hover:text-champagne transition-colors" />
+                  </a>
+
+                  <a 
+                    href="#testimonials" 
+                    className="group flex items-center justify-between p-4 rounded-xl glass-champagne hover:bg-champagne/20 transition-all duration-300"
+                    onClick={handleLinkClick}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-champagne/20 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded bg-champagne/40 transform rotate-45"></div>
+                      </div>
+                      <span className="text-ivory font-medium">Testimonios</span>
+                    </div>
+                    <ChevronRight size={18} className="text-ivory/40 group-hover:text-champagne transition-colors" />
+                  </a>
+
+                  <a 
+                    href="#location" 
+                    className="group flex items-center justify-between p-4 rounded-xl glass-champagne hover:bg-champagne/20 transition-all duration-300"
+                    onClick={handleLinkClick}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-champagne/20 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-champagne/40"></div>
+                      </div>
+                      <span className="text-ivory font-medium">Ubicación</span>
+                    </div>
+                    <ChevronRight size={18} className="text-ivory/40 group-hover:text-champagne transition-colors" />
+                  </a>
+
+                  <a 
+                    href="#final-cta" 
                     className="group flex items-center justify-between p-4 rounded-xl glass-champagne hover:bg-champagne/20 transition-all duration-300"
                     onClick={handleLinkClick}
                   >
@@ -108,7 +136,7 @@ export default function Navbar() {
                       <div className="w-10 h-10 rounded-lg bg-champagne/20 flex items-center justify-center">
                         <div className="w-6 h-6 bg-champagne/40 transform rotate-45"></div>
                       </div>
-                      <span className="text-ivory font-medium">Simulador IA</span>
+                      <span className="text-ivory font-medium">Contacto</span>
                     </div>
                     <ChevronRight size={18} className="text-ivory/40 group-hover:text-champagne transition-colors" />
                   </a>
@@ -176,9 +204,10 @@ export default function Navbar() {
           
           {/* Desktop Links (Left) */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-ivory/80 flex-1">
-            <a href="#tratamientos" className="hover:text-champagne transition-colors">Tratamientos</a>
-            <a href="#tecnologia" className="hover:text-champagne transition-colors">Tecnología</a>
-            <a href="#simulador" className="hover:text-champagne transition-colors">Simulador IA</a>
+            <a href="#features" className="hover:text-champagne transition-colors">Tecnología</a>
+            <a href="#signature-treatments" className="hover:text-champagne transition-colors">Tratamientos</a>
+            <a href="#testimonials" className="hover:text-champagne transition-colors">Testimonios</a>
+            <a href="#location" className="hover:text-champagne transition-colors">Ubicación</a>
           </div>
 
           {/* Logo (Center) */}
