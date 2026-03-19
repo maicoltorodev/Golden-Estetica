@@ -181,8 +181,8 @@ export default function Testimonials() {
     <section ref={sectionRef} id="testimonials" className="py-24 md:py-32 relative overflow-hidden border-y border-white/5 bg-obsidian/40">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-champagne/10 rounded-full blur-[160px] pointer-events-none"></div>
 
-      <div className="w-full px-6 md:px-12 relative z-10">
-        <div className="text-center mb-14 md:mb-16">
+      <div className="w-full px-0 md:px-12 relative z-10">
+        <div className="text-center mb-14 md:mb-16 px-6 md:px-0">
           <p className="text-xs font-mono text-champagne uppercase tracking-[0.3em] mb-5">Testimonios</p>
           <h2 className="font-serif text-5xl md:text-7xl leading-[0.9] font-light tracking-tight">
             Voces de
@@ -255,7 +255,7 @@ export default function Testimonials() {
           })}
         </div>
 
-        <div className="mt-16 md:mt-20 flex flex-col items-center gap-5">
+        <div className="mt-16 md:mt-20 flex flex-col items-center gap-5 px-6 md:px-0">
           <button
             onClick={handleSchedule}
             className="w-full sm:w-auto bg-champagne text-obsidian px-10 py-4 rounded-full text-sm uppercase tracking-widest font-semibold hover:bg-ivory transition-all hover:scale-105 duration-300 flex items-center justify-center gap-3"
